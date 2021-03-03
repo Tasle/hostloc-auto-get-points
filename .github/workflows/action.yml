@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: '0 14 * * *'
+    - cron: '0 17 * * *'
 
 jobs:
   get_points:
@@ -18,7 +18,7 @@ jobs:
       with:
         python-version: '3.x'
     - name: 'Install dependencies'
-      run: python -m pip install --upgrade requests
+      run: python -m pip install --upgrade requests pyaes
     - name: 'Get points'
       env:
         HOSTLOC_USERNAME: ${{ secrets.HOSTLOC_USERNAME }}
