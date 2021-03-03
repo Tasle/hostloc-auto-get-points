@@ -7,7 +7,7 @@ import re
 import textwrap
 import requests
 import json
-import pyaes
+#import pyaes
 
 from pyaes import AESModeOfOperationCBC
 from requests import Session as req_Session
